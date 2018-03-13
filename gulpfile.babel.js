@@ -165,7 +165,8 @@ const browserSync = () => {
   })
 };
 
-const build = gulp.series(html, gulp.parallel(scripts, css), images);
+const fav = gulp.series(favicon, injectFav);
+const build = gulp.series(html, gulp.parallel(scripts, css), images, fav);
 const start = gulp.series(html, gulp.parallel(scripts, css), images, gulp.parallel(watch, browserSync));
 
 gulp.task('default', start);
