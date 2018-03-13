@@ -4,76 +4,87 @@ append head
 block body
   .background
     .gradient
+    .bgTransition
     .container
       
-      .topbar.js-topbar
+      .topbar.js-reveal-topbar
         .logo
           a(href="http://secrettech.io" target="_blank") >_ secret_tech
         .buttons
+          a(href="https://t.me/MoonWallet").telegram Telegram group
           //- a(href="https://moonwallet.io/auth/sign-up").signUp Sign Up
           //- a(href="https://moonwallet.io/auth/sign-in").signIn Sign In
 
-      .landing
+      .landing.js-reveal-landing
         .name MOON
         .description Easy to use & user-friendly cryptocurrecy wallet
-        .soon Under developing and coming soon
+        .soon Coming soon...
 
-      .screenshots
+      .screenshots.js-reveal-screenshots
         .screenshot
           img(src="./images/moon-collage.png")
 
-      .benefits
+      .benefits.js-reveal-benefits
         .thing
-          .title Easy to use & user-friendly
+          .title Easy to use
           .text The main idea behind the Moon Wallet is to make Ethereum as simple as it can be. We just removed all complicated things, added nice and clean UI.
         .thing
-          .title No need to install or download
+          .title No need to download
           .text Moon Wallet has web version which can be accessed from any device with internet connection. No additional plugins required.
           a.link.disabled Launch
         .thing
           .title Open Source
           .text Our team loves open source and we have couple of open source projects we are actively developing. You can find the source code at our GitHub.
           a(href="https://github.com/JincorTech" target="_blank").link Our GitHub
+        .thing
+          .title Secure
+          .text 2FA, user actions verification, notifications, special payment password and even HD wallet support - all is for security of your account and assets.
 
-      .textBlocks
-        .thing Secure - in Moon Wallet user chooses the required security level and the level of trus to the Moon Wallet. We can manage access just by payment password which is used along with Moon Wallet key to decrypt your private key. In this case the private key is stored encrypted on the Moon Wallet servers. The another approach is to take the full control of Private keys  by your own. In this case the Moon Wallet will require your mnemonic phrase before making any  transaction.
-        .thing Free - yes  it is. Moon Wallet is currently absolutely free and we don't show you any ads. Why? Because we think that all available wallets were made for geeks by geeks. This time geeks(secrettech.io team) are creating something for people.
+      .textBlocks.js-reveal-free
+        img(src="./images/diamond.svg").baloonsImage
+        .title Absolutely Free
+        .thing Moon Wallet is currently absolutely free and we don't show you any ads. Why? Because we think that all available wallets were made for geeks by geeks. This time geeks(secrettech.io team) are creating something for people.
+        a(href="http://moonwallet.tech").link Let's try!
 
     .links
+      .bgTransition2
+      img(src="./images/github.svg").githubImage
       a.disabled Backend Module
       a.disabled Frontend Module
+      .bgTransition3
 
     .container
       .team
-        .title Team
+        .title.js-reveal-team-title The A* team
         .members
-          a(href="" target="_blank").member
-            img(src="https://jincor.com/dist/1f10bf49cb5d842b1f444daedf03c73e.jpg").photo
-            .name Andrey Degtyaruk
-            .job CTO
-          a(href="" target="_blank").member
-            img(src="https://jincor.com/dist/18772b23211c0297e6f4d1afc4578368.jpg").photo
-            .name Alexandr Sedelnikov
-            .job Backend
-          a(href="" target="_blank").member
-            img(src="https://jincor.com/dist/d6e37ca4f70d587c1d967664d32346c2.jpg").photo
-            .name Aidar Ibatullin
-            .job Frontend
-          a(href="" target="_blank").member
+          a(href="" target="_blank").member.member.js-reveal-team-third
             img(src="https://jincor.com/dist/84cbe04f22fbbd54112776716c8e99a7.jpg").photo
             .name Alexandr Isaev
             .job Frontend
-          a(href="" target="_blank").member
+          a(href="" target="_blank").member.member.js-reveal-team-second
+            img(src="https://jincor.com/dist/d6e37ca4f70d587c1d967664d32346c2.jpg").photo
+            .name Aidar Ibatullin
+            .job Frontend
+          a(href="" target="_blank").member.js-reveal-team-first
+            img(src="https://jincor.com/dist/1f10bf49cb5d842b1f444daedf03c73e.jpg").photo
+            .name Andrey Degtyaruk
+            .job CTO
+          a(href="" target="_blank").member.member.js-reveal-team-second
+            img(src="https://jincor.com/dist/18772b23211c0297e6f4d1afc4578368.jpg").photo
+            .name Alexandr Sedelnikov
+            .job Backend
+          a(href="" target="_blank").member.member.js-reveal-team-third
             img(src="https://jincor.com/dist/429353834f437cef4fa79f999292369d.jpg").photo
             .name Alexandr Shaikhanov
             .job Backend
+            
+      .contact.js-reveal-contacts
+        .title Contact us
+        a(href="https://t.me/MoonWallet").link Telegram group
+        a(href="mailto:info@secrettech.io" target="_blank").link info@secrettech.io
 
-      .todos
-        .title Upcoming features
-        .todo Import and export wallets
-        .todo Desktop application
-        .todo Mobile application
-        .todo Wallet Top Up
-        .todo ???
+      .donate.js-reveal-donate
+        .title Like our job? Support us (ETH)
+        .address 0x6B8a42a1fAEFedB0E2CF435ADB093F1736eD49cc
 
-      a(href="http://secrettech.io").footer Created by secret_tech on planet Earth in 2018
+      a(href="http://secrettech.io").footer Created with ❤️ by secret_tech on 🌎 in 2018

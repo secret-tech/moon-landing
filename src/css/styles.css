@@ -23,8 +23,9 @@ html, body {
 .background {
   background-image: url(../images/background.jpg);
   background-size: cover;
-  min-height: 600px;
-  height: 100vh;
+  min-height: 1000px;
+  height: 100%;
+  max-height: 1000px;
   width: 100%;
   position: relative;
 }
@@ -35,15 +36,25 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -moz-linear-gradient(top, rgba(24,32,38,0) 0%, rgba(24,32,38,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(24,32,38,0) 0%,rgba(24,32,38,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(24,32,38,0) 0%,rgba(24,32,38,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00182026', endColorstr='#182026',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, rgba(24,32,38,1) 0%, rgba(67,98,121,0) 43%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(24,32,38,1) 0%,rgba(67,98,121,0) 43%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(24,32,38,1) 0%,rgba(67,98,121,0) 43%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182026', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.background .bgTransition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: url('../images/bgTransition1.svg') no-repeat;
+  background-size: cover;
+  height: 200px;
 }
 
 .container {
   box-sizing: border-box;
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
 }
@@ -185,6 +196,24 @@ html, body {
   max-width: 700px;
   padding: 50px 0 100px;
   margin: -20px auto;
+  text-align: center;
+}
+
+.textBlocks .baloonsImage {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  display: block;
+  opacity: .7;
+}
+
+.textBlocks .title {
+  font-family: 'Raleway';
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .textBlocks .thing {
@@ -197,12 +226,39 @@ html, body {
   padding: 20px 0;
 }
 
+.textBlocks .link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #48AFF0;
+}
+
 
 .links {
-  padding: 150px 0;
-  background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-17773.jpg');
+  background-image: url('../images/background2.jpg');
   background-size: cover;
   text-align: center;
+}
+
+.links .bgTransition2 {
+  width: 100%;
+  height: 200px;
+  background: url('../images/bgTransition2.svg') no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.links .bgTransition3 {
+  width: 100%;
+  height: 200px;
+  background: url('../images/bgTransition3.svg') no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.links .githubImage {
+  width: 80px;
+  display: block;
+  margin: 0 auto 50px;
 }
 
 .links a {
@@ -226,7 +282,6 @@ html, body {
 
 .team {
   padding: 100px 0;
-  margin: 0 -55px;
 }
 
 .team .title {
@@ -246,12 +301,18 @@ html, body {
 .members .member {
   text-align: center;
   width: 250px;
+  text-decoration: none;
+}
+
+.members .member:hover .photo {
+  transform: scale(1.1);
 }
 
 .members .member .photo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  transition: 0.3s ease all;
 }
 
 .members .member .name {
@@ -268,11 +329,13 @@ html, body {
 }
 
 
-.todos {
+.contact {
   padding: 50px 0;
+  text-align: center;
+  color: #fff;
 }
 
-.todos .title {
+.contact .title {
   font-family: 'Raleway';
   font-size: 36px;
   font-weight: 100;
@@ -281,14 +344,40 @@ html, body {
   margin-bottom: 20px;
 }
 
-.todos .todo {
+.contact .link {
   font-size: 18px;
   font-family: 'Roboto';
   font-weight: 300;
   color: #fff;
   text-align: center;
-  display: block;
-  margin: 10px 0;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+.donate {
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.donate .title {
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.donate .address {
+  font-size: 36px;
+  font-family: 'Raleway';
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 
