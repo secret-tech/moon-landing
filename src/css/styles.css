@@ -1,0 +1,307 @@
+@import "./vendor/normalize.css";
+
+* {
+  font-family: Roboto;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #005BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+  background-color: #182026;
+}
+
+.background {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.background .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top, rgba(24,32,38,0) 0%, rgba(24,32,38,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(24,32,38,0) 0%,rgba(24,32,38,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(24,32,38,0) 0%,rgba(24,32,38,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00182026', endColorstr='#182026',GradientType=0 ); /* IE6-9 */
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.logo > a {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttons {
+  margin: 0 -10px;
+}
+
+.buttons a {
+  font-size: 18px;
+  color: #fff;
+  padding: 9px 30px 10px;
+  font-family: Roboto;
+  font-weight: 100;
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: 0.1s linear all;
+}
+
+.buttons a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttons a.signIn {
+  background-color: #137CBD;
+}
+
+.buttons a.signIn:hover {
+  background-color: #2B95D6;
+}
+
+
+.landing {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.landing .logo {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.landing .name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.landing .description {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.landing .soon {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+.screenshots {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.screenshots .screenshot img {
+  width: 100%;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 150px 0 50px;
+}
+
+.benefits .thing {
+  width: 350px;
+  text-align: center;
+}
+
+.benefits .thing .title {
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 30px;
+}
+
+.benefits .thing .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  padding: 0 30px;
+  line-height: 1.8;
+}
+
+.benefits .thing .link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #48AFF0;
+}
+
+.benefits .thing .link.disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+
+.textBlocks {
+  max-width: 700px;
+  padding: 50px 0 100px;
+  margin: -20px auto;
+}
+
+.textBlocks .thing {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+
+.links {
+  padding: 150px 0;
+  background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-17773.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.links a {
+  font-size: 36px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  color: #fff;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.links .disabled {
+  cursor: not-allowed;
+  color: #fff;
+}
+
+.links .disabled:hover {
+  cursor: not-allowed;
+}
+
+
+.team {
+  padding: 100px 0;
+  margin: 0 -55px;
+}
+
+.team .title {
+  font-family: 'Raleway';
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+}
+
+.members {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.members .member {
+  text-align: center;
+  width: 250px;
+}
+
+.members .member .photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.members .member .name {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Raleway';
+  margin-top: 20px;
+}
+
+.members .member .job {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+.todos {
+  padding: 50px 0;
+}
+
+.todos .title {
+  font-family: 'Raleway';
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todos .todo {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+}
+
+
+.footer {
+  padding: 20px 0 35px;
+  text-align: center;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  color: #fff;
+  border-top: 1px solid #848484;
+  display: block;
+}
+
+.footer:hover {
+  text-decoration: none;
+}

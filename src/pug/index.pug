@@ -1,0 +1,79 @@
+extends includes/tpl.pug
+append head
+  title secret_tech
+block body
+  .background
+    .gradient
+    .container
+      
+      .topbar.js-topbar
+        .logo
+          a(href="http://secrettech.io" target="_blank") >_ secret_tech
+        .buttons
+          //- a(href="https://moonwallet.io/auth/sign-up").signUp Sign Up
+          //- a(href="https://moonwallet.io/auth/sign-in").signIn Sign In
+
+      .landing
+        .name MOON
+        .description Easy to use & user-friendly cryptocurrecy wallet
+        .soon Under developing and coming soon
+
+      .screenshots
+        .screenshot
+          img(src="../images/moon-collage.png")
+
+      .benefits
+        .thing
+          .title Easy to use & user-friendly
+          .text The main idea behind the Moon Wallet is to make Ethereum as simple as it can be. We just removed all complicated things, added nice and clean UI.
+        .thing
+          .title No need to install or download
+          .text Moon Wallet has web version which can be accessed from any device with internet connection. No additional plugins required.
+          a.link.disabled Launch
+        .thing
+          .title Open Source
+          .text Our team loves open source and we have couple of open source projects we are actively developing. You can find the source code at our GitHub.
+          a(href="https://github.com/JincorTech" target="_blank").link Our GitHub
+
+      .textBlocks
+        .thing Secure - in Moon Wallet user chooses the required security level and the level of trus to the Moon Wallet. We can manage access just by payment password which is used along with Moon Wallet key to decrypt your private key. In this case the private key is stored encrypted on the Moon Wallet servers. The another approach is to take the full control of Private keys  by your own. In this case the Moon Wallet will require your mnemonic phrase before making any  transaction.
+        .thing Free - yes  it is. Moon Wallet is currently absolutely free and we don't show you any ads. Why? Because we think that all available wallets were made for geeks by geeks. This time geeks(secrettech.io team) are creating something for people.
+
+    .links
+      a.disabled Backend Module
+      a.disabled Frontend Module
+
+    .container
+      .team
+        .title Team
+        .members
+          a(href="" target="_blank").member
+            img(src="https://jincor.com/dist/1f10bf49cb5d842b1f444daedf03c73e.jpg").photo
+            .name Andrey Degtyaruk
+            .job CTO
+          a(href="" target="_blank").member
+            img(src="https://jincor.com/dist/18772b23211c0297e6f4d1afc4578368.jpg").photo
+            .name Alexandr Sedelnikov
+            .job Backend
+          a(href="" target="_blank").member
+            img(src="https://jincor.com/dist/d6e37ca4f70d587c1d967664d32346c2.jpg").photo
+            .name Aidar Ibatullin
+            .job Frontend
+          a(href="" target="_blank").member
+            img(src="https://jincor.com/dist/84cbe04f22fbbd54112776716c8e99a7.jpg").photo
+            .name Alexandr Isaev
+            .job Frontend
+          a(href="" target="_blank").member
+            img(src="https://jincor.com/dist/429353834f437cef4fa79f999292369d.jpg").photo
+            .name Alexandr Shaikhanov
+            .job Backend
+
+      .todos
+        .title Upcoming features
+        .todo Import and export wallets
+        .todo Desktop application
+        .todo Mobile application
+        .todo Wallet Top Up
+        .todo ???
+
+      a(href="http://secrettech.io").footer Created by secret_tech on planet Earth in 2018

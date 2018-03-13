@@ -1,0 +1,58 @@
+extends includes/tpl.pug
+append head
+  title secret_tech | software
+block body
+  .container
+    a.logo(href="./index.html")
+      | &#62;goback&#95;
+    h1.title
+      | These are the cool software
+      | we talked about.
+    .projects
+      .project
+        .project-title ICO contacts
+        .project-description Jincor smart-contracts which can be used for almost any ICO.
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/JincorTech/ico") View on Github
+          
+      .project
+        .project-title ICO contributors dashboard
+        .project-description Open source dashboard for your next ICO.
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/JincorTech/backend-ico-dashboard") Backend
+          a.project-url(target="_blank" href="https://github.com/JincorTech/frontend-ico-dashboard") Frontend
+          a.project-url.disabled(target="_blank" href="javascript:void(0);") Demo
+          
+      .project
+        .project-title Moon Wallet
+        .project-description Lightweight ethereum and ERC20 tokens wallet.
+        .project-links
+          a.project-url.disabled(target="_blank" href="javascript:void(0);") Frontend
+          a.project-url.disabled(target="_blank" href="javascript:void(0);") Backend
+          a.project-url.disabled(target="_blank" href="javascript:void(0);") Live
+          
+      .project
+        .project-title Auth
+        .project-description Multipurpose authentication and identity microservice.
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/JincorTech/backend-auth") View on Github
+        
+      .project
+        .project-title Verify
+        .project-description Microservice to verify user actions and contacts.
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/JincorTech/backend-verify") View on Github
+          
+      .project
+        .project-title Notify
+        .project-description Flexible microservice for notifications of all types.
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/JincorTech/backend-notify") View on Github
+        
+      .project
+        .project-title Frontend boilerplate
+        .project-description React-based boilerplate to create powerful frontend applications.
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/JincorTech/frontend-boilerplate") View on Github
+    .footer
+      include includes/footer.pug
