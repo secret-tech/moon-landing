@@ -70,12 +70,12 @@ const scripts = () => gulp
   }))
   .pipe(uglify())
 	.pipe(gulp.dest(dist.js));
-	
+
 const images = () => gulp
   .src(src.images)
   .pipe(image())
 	.pipe(gulp.dest(dist.images));
-	
+
 const favicon = done => {
 	realFavicon.generateFavicon({
 		masterPicture: src.favicon,
@@ -135,7 +135,7 @@ const favicon = done => {
 		done();
 	});
 };
-	
+
 const injectFav = () => gulp
 	.src(['./build/index.html'])
 	.pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
@@ -169,6 +169,7 @@ const build = gulp.series(html, gulp.parallel(scripts, css), images);
 const start = gulp.series(html, gulp.parallel(scripts, css), images, gulp.parallel(watch, browserSync));
 
 gulp.task('default', start);
+gulp.task('build', build);
 
 gulp.task('deploy',
   () => gulp
