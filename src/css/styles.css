@@ -81,15 +81,42 @@ html, body {
   padding: 40px 0;
 }
 
-.logo > a {
+@media only screen and (max-width: 768px) {
+  .topbar {
+    display: block;
+  }
+}
+
+.topbar .logo > a {
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .topbar .logo {
+    text-align: center;
+  }
+}
+
 .buttons {
   margin: 0 -10px;
+}
+
+.buttons.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttons {
+    display: none;
+  }
+
+  .buttons.mobile {
+    display: block;
+    padding: 10px 0 40px;
+  }
 }
 
 .buttons a {
@@ -102,6 +129,14 @@ html, body {
   margin: 0 10px;
   border-radius: 4px;
   transition: 0.1s linear all;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttons.mobile a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
 }
 
 .buttons a:hover {
@@ -122,6 +157,12 @@ html, body {
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .landing {
+    padding: 60px 0 20px;
+  }
+}
+
 .landing .logo {
   height: 80px;
   width: 80px;
@@ -138,6 +179,7 @@ html, body {
 .landing .description {
   font-family: 'Roboto';
   font-size: 18px;
+  line-height: 1.5;
   font-weight: 300;
   color: #fff;
   margin-top: 20px;
@@ -157,8 +199,22 @@ html, body {
   overflow: hidden;
 }
 
+.screenshots.mobile {
+  display: none;
+}
+
 .screenshots .screenshot img {
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .screenshots {
+    display: none;
+  }
+
+  .screenshots.mobile {
+    display: block;
+  }
 }
 
 
@@ -169,10 +225,10 @@ html, body {
   padding: 150px 0 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .benefits {
     flex-direction: column;
-    padding: 100px 0 20px;
+    padding: 50px 0 20px;
   }
 }
 
@@ -283,6 +339,13 @@ html, body {
   margin-top: 50px;
 }
 
+@media only screen and (max-width: 900px) {
+  .links .bgTransition2,
+  .links .bgTransition3 {
+    margin: 0;
+  }
+}
+
 .links .githubImage {
   width: 80px;
   display: block;
@@ -298,6 +361,13 @@ html, body {
   margin: 0 20px;
 }
 
+@media only screen and (max-width: 900px) {
+  .links a {
+    font-size: 24px;
+    margin: 20px;
+  }
+}
+
 .links .disabled {
   cursor: not-allowed;
   color: #fff;
@@ -310,6 +380,12 @@ html, body {
 
 .team {
   padding: 100px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .team {
+    display: none;
+  }
 }
 
 .team .title {
@@ -399,6 +475,13 @@ html, body {
   margin: 0 10px;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact .link {
+    margin: 10px 0;
+    display: block;
+  }
+}
+
 
 .donate {
   padding: 50px 0;
@@ -425,9 +508,11 @@ html, body {
   margin: 0 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .donate .address {
     font-size: 24px;
+    width: calc(100% - 20px);
+    word-wrap: break-word;
   }
 }
 
@@ -440,6 +525,13 @@ html, body {
   color: #fff;
   border-top: 1px solid #848484;
   display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
 
 .footer:hover {
