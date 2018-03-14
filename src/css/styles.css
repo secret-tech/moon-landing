@@ -336,11 +336,28 @@ html, body {
   transform: scale(1.1);
 }
 
+.members .member:hover .photo .glasses {
+  opacity: 1;
+}
+
 .members .member .photo {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  transition: 0.3s ease all;
+}
+
+.members .member .photo img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  transition: 0.3s ease all;
+}
+
+.members .member .photo img.glasses {
+  position: absolute;
+  opacity: 0;
+  left: 0;
 }
 
 .members .member .name {

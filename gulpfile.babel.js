@@ -28,7 +28,7 @@ const src = {
   css: 'src/css/styles.css',
 	stls: 'src/css/**/*.css',
 	js: './src/**/*.js',
-	images: 'src/images/*',
+	images: 'src/images/**/*',
   favicon: 'src/images/favicon.png'
 };
 
