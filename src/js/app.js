@@ -13,20 +13,26 @@ window.sr = ScrollReveal({
 
 // landing
 sr.reveal('.js-reveal-topbar', {
-  delay: 500,
+  delay: 400,
   duration: 300,
   distance: '-80px'
 });
 
 sr.reveal('.js-reveal-landing', {
-  delay: 250,
+  delay: 100,
+  duration: 300,
+  distance: '80px'
+});
+
+sr.reveal('.js-reveal-buttons', {
+  delay: 200,
   duration: 300,
   distance: '80px'
 });
 
 sr.reveal('.js-reveal-screenshots', {
-  delay: 250,
-  duration: 500,
+  delay: 300,
+  duration: 300,
   distance: '80px'
 });
 

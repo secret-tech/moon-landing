@@ -9,21 +9,25 @@ block body
       
       .topbar.js-reveal-topbar
         .logo
-          a(href="http://secrettech.io" target="_blank") >_ secret_tech
-        .buttons
-          a(href="https://t.me/MoonWallet").telegram Telegram group
-          a(href="https://app.moonwallet.tech/auth/sign-up").signUp Sign Up
-          a(href="https://app.moonwallet.tech/auth/sign-in").signIn Sign In
+          a(href="https://secrettech.io" target="_blank") >_ secret_tech
+        .topbar-links
+          a(href="https://t.me/MoonWallet")
+            img(src="./images/telegram.svg")
+            span Telegram
+          a(href="https://github.com/secret-tech")
+            img(src="./images/github.svg")
+            span GitHub
 
       .landing.js-reveal-landing
         img(src="./images/logo.svg").logo
         .name MOON
         .description Easy to use & user-friendly cryptocurrecy wallet
         
-      .buttons.mobile
-        a(href="https://t.me/MoonWallet").telegram Telegram group
-        a(href="https://app.moonwallet.tech/auth/sign-up").signUp Sign Up
-        a(href="https://app.moonwallet.tech/auth/sign-in").signIn Sign In
+      .buttons.js-reveal-buttons
+        div
+          a(href="https://app.moonwallet.tech/auth/sign-up").signUp Sign up for free
+        div
+          a(href="https://app.moonwallet.tech/auth/sign-in").signIn Sign in
 
       .screenshots.js-reveal-screenshots
         .screenshot
@@ -44,7 +48,7 @@ block body
         .thing
           .title Open Source
           .text Our team loves open source and we have couple of open source projects we are actively developing. You can find the source code at our GitHub.
-          a(href="https://github.com/JincorTech" target="_blank").link Our GitHub
+          a(href="https://github.com/secret-tech" target="_blank").link Our GitHub
         .thing
           .title Secure
           .text 2FA, user actions verification, notifications, special payment password and even HD wallet support - all is for security of your account and assets.
@@ -53,13 +57,15 @@ block body
         img(src="./images/diamond.svg").baloonsImage
         .title Absolutely Free
         .thing Moon Wallet is currently absolutely free and we don't show you any ads. Why? Because we think that all available wallets were made for geeks by geeks. This time geeks(secrettech.io team) are creating something for people.
-        //- a(href="http://moonwallet.tech").link Let's try!
 
     .links
       .bgTransition2
       img(src="./images/github.svg").githubImage
-      a(href="https://github.com/JincorTech/backend-token-wallets" target="_blank") Backend Module
-      a(href="https://github.com/JincorTech/frontend-moon-wallet" target="_blank") Frontend Module
+      h3.title Let's make crypto-world better together!
+      .text Everyone can contribute to MoonWallet development. You even don't need to have programming skills to participate. Find bugs, report them in our GitHub or Telegram chat and spread the word about project across the crypto community. Everyone's help is important!
+      a(href="https://github.com/secret-tech/frontend-moon-wallet" target="_blank").link Frontend repo
+      a(href="https://github.com/secret-tech/backend-token-wallets" target="_blank").link Backend repo
+      a(href="https://t.me/MoonWallet" target="_blank").link Submit issue
       .bgTransition3
 
     .container
@@ -106,4 +112,4 @@ block body
         .title Like our job? Support us (ETH)
         .address 0x6B8a42a1fAEFedB0E2CF435ADB093F1736eD49cc
 
-      a(href="http://secrettech.io").footer Created with ❤️ by secret_tech on 🌎 in 2018
+      a(href="https://secrettech.io").footer Created with ❤️ by secret_tech on 🌎 in 2018

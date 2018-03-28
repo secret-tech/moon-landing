@@ -100,29 +100,49 @@ html, body {
   }
 }
 
-.buttons {
-  margin: 0 -10px;
-}
-
-.buttons.mobile {
-  display: none;
+.topbar-links {
+  display: flex;
 }
 
 @media only screen and (max-width: 768px) {
-  .buttons {
+  .topbar-links {
     display: none;
-  }
-
-  .buttons.mobile {
-    display: block;
-    padding: 10px 0 40px;
   }
 }
 
-.buttons a {
-  font-size: 18px;
+.topbar-links a {
+  font-size: 16px;
   color: #fff;
-  padding: 9px 30px 10px;
+  display: flex;
+  align-items: end;
+  padding: 9px 20px 10px;
+  border-radius: 2px;
+}
+
+.topbar-links a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.topbar-links a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.topbar-links a span {
+  color: #fff;
+}
+
+
+.buttons {
+  text-align: center;
+}
+
+.buttons a {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
   font-family: Roboto;
   font-weight: 100;
   text-decoration: none;
@@ -131,29 +151,25 @@ html, body {
   transition: 0.1s linear all;
 }
 
-@media only screen and (max-width: 768px) {
-  .buttons.mobile a {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
+.buttons a.signUp {
+  background-color: #48AFF0;
+  font-size: 18px;
+  padding: 12px 40px 13px;
+  transition: 0.1s linear all;
 }
 
-.buttons a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.buttons a.signUp:hover {
+  background-color: #2B95D6;
 }
 
 .buttons a.signIn {
-  background-color: #137CBD;
-}
-
-.buttons a.signIn:hover {
-  background-color: #2B95D6;
+  margin-top: 15px;
+  text-decoration: underline;
 }
 
 
 .landing {
-  padding: 150px 0;
+  padding: 150px 0 70px;
   text-align: center;
 }
 
@@ -199,10 +215,6 @@ html, body {
   overflow: hidden;
 }
 
-.screenshots.mobile {
-  display: none;
-}
-
 .screenshots .screenshot img {
   width: 100%;
 }
@@ -210,10 +222,6 @@ html, body {
 @media only screen and (max-width: 900px) {
   .screenshots {
     display: none;
-  }
-
-  .screenshots.mobile {
-    display: block;
   }
 }
 
@@ -347,18 +355,54 @@ html, body {
 }
 
 .links .githubImage {
-  width: 80px;
+  width: 60px;
   display: block;
   margin: 0 auto 50px;
 }
 
-.links a {
-  font-size: 36px;
-  font-family: 'Raleway';
+.links h3.title {
+  font-size: 24px;
   font-weight: 100;
+  color: #fff;
+  margin: 0;
+}
+
+.links .text {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #fff;
+  max-width: 600px;
+  margin: 20px auto 40px;
+}
+
+.links .link {
+  font-size: 24px;
   color: #fff;
   display: inline-block;
   margin: 0 20px;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .links h3.title {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .links {
+    margin: -15px 0;
+  }
+
+  .links .text {
+    width: calc(100% - 40px);
+  }
+
+  .links .link {
+    display: block;
+    margin: 15px 0;
+  }
 }
 
 @media only screen and (max-width: 900px) {
